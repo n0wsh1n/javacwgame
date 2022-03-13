@@ -56,7 +56,7 @@ import java.util.*;
  * 
  * lets you edit the polygon drawn in a previous session around the image yellow-bird.gif).
  */
-public class PolygonEditor extends JPanel
+public class DinoController extends JPanel
 {   private static double WIDTH = 500;
     private static double HEIGHT = 500;
     private static int SCALE = 8;
@@ -82,7 +82,7 @@ public class PolygonEditor extends JPanel
     /**
      * Initialise a new editor with no background image.
      */
-    private PolygonEditor()
+    private DinoController()
     {
         this(null, 1.0f);
     }
@@ -96,7 +96,7 @@ public class PolygonEditor extends JPanel
      * If file name is null, no image will be loaded.
      * @param f image file name
      */
-    private PolygonEditor(String f, float boxHeight)
+    private DinoController(String f, float boxHeight)
     {
         super();
         this.boxHeight = boxHeight;
@@ -262,7 +262,7 @@ public class PolygonEditor extends JPanel
             String[] coords = args[i].split("[, ]+");
             for (String x : coords) coordStrings.add(x);
         }
-        PolygonEditor editor = new PolygonEditor(fileName, boxHeight);
+        DinoController editor = new DinoController(fileName, boxHeight);
         if (coordStrings.size() > 0) {
             int i = 0;
             boolean gotX = false;

@@ -24,8 +24,8 @@ public class GameWorld extends World {
 
         //make a character (with an overlaid image)
 
-        Student student = new Student(this);
-        student.setPosition(new Vec2(4,-5));
+        Dino dino = new Dino(this);
+        dino.setPosition(new Vec2(4,-5));
 
     }
 }
